@@ -1,0 +1,91 @@
+import os
+import csv
+import math
+import sys
+import random as r
+
+def readerIn():
+    os.chdir\
+    ('S:\PAVE_MANAGEMENT\AUTOMATED_DISTRESS_SURVEYS\\\\02_COLLECTION_VEHICLES\\\\07_GIS_LAYERS\\\\2015_NORTH_VAN_EXPORTS\\\\USEFULL_2015_SPREADSHEETS')
+    
+    
+def readerOut():
+    os.chdir('S:\PAVE_MANAGEMENT\AUTOMATED_DISTRESS_SURVEYS\\\\02_COLLECTION_VEHICLES\\\\07_GIS_LAYERS')
+
+
+class nCounter(object):
+    
+    def __init__(self):
+        self.length = 10
+        self.rounder = 3
+
+    def yielderOut(self):
+        n = 0
+        readerIn()
+        corr = raw_input('Enter the corridor you want: ').upper()
+        for col in csv.DictReader(open('2015_FILES_COMBINED.CSV')):
+            corridorRB = str(col['CORRIDOR_CODE_RB'])
+            corridor = str(col['CORRIDOR_CODE'])
+            begMi = float(col['BEGIN_MI'])
+            begHi = float(col['BEGIN_MI'])
+            begLi = float(col['BEGIN_MI'])
+            endMi = float(col['END_MI'])
+            lane = int(col['LANE'])
+            dir_ = str(col['DIR'])
+            group = corridor,begMi,endMi,lane,dir_
+            n = n + 1
+            try:
+                if corridor == corr:
+                    if abs(endMi - begMi) < self.length:
+                        varsL = round(r.uniform(math.ceil(begMi),\
+                            (math.floor(endMi))),self.rounder)
+                        if dir_ == 'I':
+                            if (varsL > begMi and varsL < endMi):
+                                yield group,varsL
+                            else:continue
+                        if dir_ == 'D':
+                            if (varsL < begMi and varsL > endMi):
+                                yield group,varsL
+                            else:continue
+                    elif abs(endMi - begMi) <= (2*self.length)\
+                         and abs(endMi - begMi) > self.length:
+                        varsM = round(r.uniform(math.ceil(begMi),\
+                            (math.floor(begMi+self.length))),self.rounder)
+                        varsO = round(r.uniform(math.ceil(begMi),\
+                            (math.floor(begMi-self.length))),self.rounder)
+                        if dir_ == 'I' and varsM < (begMi+self.length):
+                            yield group,varsM
+                        else:continue
+                        if dir_ == 'D' and varsO < (begMi-self.length):
+                            yield group,varsO
+                        else:continue
+                    elif abs(endMi - begMi) > (2*self.length):
+                        if dir_ == 'I':
+                            for i in range(0,n):
+                                begHi = math.floor(begHi)+self.length
+                                varsN = round(r.uniform(math.ceil(begHi),\
+                                    (math.floor(begHi+self.length))),self.rounder)
+                                if varsN < endMi and varsN > begMi:
+                                    yield group,varsN
+                                else:continue
+                        if dir_ == 'D':
+                            for i in range(0,n):
+                                begLi = math.floor(begLi)-self.length
+                                varsP = round(r.uniform(math.ceil(begLi),\
+                                    (math.floor(begLi-self.length))),self.rounder)
+                                if varsP > endMi and varsP < begMi:
+                                    yield group,varsP
+                                else:continue
+                    else:continue
+            except:break
+     
+def nCounterGo():
+    readerOut()
+    #outfile = csv.writer(open('random_gen_writer.csv','wb'))
+    for i in range(0,1):
+        out = nCounter()
+        for line in out.yielderOut():
+            print line
+            #outfile.writerow(line)
+nCounterGo()
+
