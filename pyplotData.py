@@ -12,6 +12,7 @@ def dataIn():
             yield col
 
 def graphWriterIRIandRut():
+    n = 100
     startList = []
     endList = []
     iriRList = []
