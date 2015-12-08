@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 
 os.chdir('C:\Users\U2970\Desktop\calibrationFiles')
 
+def dataIn():
+    for file in g.glob('*.TXT'):
+        for col in csv.DictReader(open(file,'rU')):
+            yield col
+
 def graphWriterIRIandRut():
     startList = []
     endList = []
@@ -13,15 +18,14 @@ def graphWriterIRIandRut():
     iriLList = []
     rutRList = []
     rutLList = []
-    for file in g.glob('*.TXT'):
-        for col in csv.DictReader(open(file,'rU')):
-            set_ = int(col[' Set'])
-            startList.append(float(col['Start-Mi']))
-            endList.append(float(col['  End-Mi']))
-            iriRList.append(float(col[' IRI R e']))
-            iriLList.append(float(col['IRI LWP ']))
-            rutRList.append(float(col[' RUT R e']))
-            rutLList.append(float(col[' RUT L e']))
+    for col in dataIn()
+        set_ = int(col[' Set'])
+        startList.append(float(col['Start-Mi']))
+        endList.append(float(col['  End-Mi']))
+        iriRList.append(float(col[' IRI R e']))
+        iriLList.append(float(col['IRI LWP ']))
+        rutRList.append(float(col[' RUT R e']))
+        rutLList.append(float(col[' RUT L e']))
             
     plt.subplot(2, 1, 1)
     plt.grid(True)
