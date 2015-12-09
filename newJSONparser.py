@@ -1,9 +1,10 @@
 import os
 import json
 
+os.chdir('C:\Users\U2970\Documents\ArcGIS')
+
 def jSonYield():
     n = 0
-    os.chdir('C:\Users\U2970\Documents\ArcGIS')
     with open('new_corrs_shapy_FeaturesToJS.json')as datafile:
         data = json.load(datafile)
     for k, v in data['features']:
@@ -19,6 +20,5 @@ def jSonYield():
         n = n + 1
         yield corr,frf,trf,latMin,longMin,latMax,longMax
 
-gen = jSonYield()
-for line in gen:
+for line in jSonYield():
     print line
