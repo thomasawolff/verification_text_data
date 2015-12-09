@@ -4,8 +4,9 @@ import csv
 import os
 import pprint as p
 
+os.chdir('C:\Users\U2970\Desktop\\\\SEC_FILE_EXPORTS')
+
 def data_parser():
-    os.chdir('C:\Users\U2970\Desktop\\\\SEC_FILE_EXPORTS')
     for file in glob.glob('*ATTEMPT.CSV'):
         for row in csv.DictReader(open(file,'rU')):
             corridor = row['       SEC_FILE'].strip()
@@ -28,9 +29,8 @@ def data_parser():
             yield corrRB,from_,to_,lane,dir_,frfpost,trfpost,\
                   dateMon,dateDay,dateYear,dateHour,dateMin
 
-gen = data_parser()
-#outfile = csv.writer(open('sec_corridor_join.csv','wb'))
-for line in gen:
+outfile = csv.writer(open('sec_corridor_join.csv','wb'))
+for line in data_parser():
     print line
-    #outfile.writerow(line)
-#print 'job completed'
+    outfile.writerow(line)
+print 'job completed'
