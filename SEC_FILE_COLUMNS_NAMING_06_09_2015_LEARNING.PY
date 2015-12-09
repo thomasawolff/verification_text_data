@@ -15,8 +15,7 @@ def dataOut():
   
 def headerBody():
     data = []
-    dataInput = dataOut()
-    for line in dataInput:
+    for line in dataOut():
         gc.disable()
         data.append(line.split('!'))
         gc.enable()
@@ -33,24 +32,22 @@ def headerBody():
         yield corrRB,begMi,endMi,length,dir_,lane,set_,month,day
         
 def printerOut():
-    gen = headerBody()
-    ##outfile = csv.writer(open('program_NORTH_data.csv','wb'))
+    outfile = csv.writer(open('program_NORTH_data.csv','wb'))
     n = 0
     columns = ('corridorRB','begMi','endMi','length',\
                    'dir_','lane','set_','month','day')
-    ##outfile.writerows([columns])
-    for line in gen:
+    outfile.writerows([columns])
+    for line in headerBody():
         n = n + 1
         colNew = ','.join(columns)
-        ##outfile.writerows([line])
+        outfile.writerows([line])
         print'Row created',n,time.clock()
 printerOut()
 
 def corrSearch():
     n = 0
     data = []
-    dataInput = dataOut()
-    for line in dataInput:
+    for line in dataOut():
         gc.disable()
         data.append(line.split('!'))
         gc.enable()
@@ -73,9 +70,9 @@ def corrSearch():
                         and len(col[n]) == 1: 
                         yield col[n],n,'Cardinal'
                     break
-##gen = corrSearch()
-##for line in gen:
-##    print line
+                
+for line in corrSearch():
+    print line
 
 
 
