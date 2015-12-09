@@ -1,8 +1,9 @@
+import os
+from xlrd import open_workbook
+
+os.chdir('S:\\PAVE_MANAGEMENT\\AUTOMATED_DISTRESS_SURVEYS\\02_COLLECTION_VEHICLES\\07_GIS_LAYERS\\2015_NORTH_VAN_EXPORTS\\USEFULL_2015_SPREADSHEETS')
 
 def xlsReader():
-    import os
-    from xlrd import open_workbook
-    os.chdir('S:\\PAVE_MANAGEMENT\\AUTOMATED_DISTRESS_SURVEYS\\02_COLLECTION_VEHICLES\\07_GIS_LAYERS\\2015_NORTH_VAN_EXPORTS\\USEFULL_2015_SPREADSHEETS')
     while True:
         enter = raw_input('Enter the name of the file: ')
         if enter.lower() == 'done':
@@ -19,6 +20,5 @@ def xlsReader():
             continue
 
 import pprint as p   
-gen = xlsReader()
-for line in gen:
+for line in xlsReader():
     p.pprint(line)
