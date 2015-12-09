@@ -3,8 +3,9 @@ import glob
 import csv
 import os
 
+os.chdir('C:\Users\U2970\Desktop\Rut and Ride Data2')
+
 def data_parser():
-    os.chdir('C:\Users\U2970\Desktop\Rut and Ride Data2')
     for file in glob.glob('*.TXT'):
         for row in csv.DictReader(open(file,'rb')):
             try:
@@ -39,10 +40,9 @@ def data_parser():
                   ll1Rut,rl1Ride,rl1Rut,year
 
 os.chdir('C:\Users\U2970\Desktop')
-#outfile = csv.writer(open('project_outfile_christian_new.csv','wb'))
-generator_1 = data_parser()
-for row in generator_1:
-    #outfile.writerow(row)
-#print'creation is done of the .CSV'
+outfile = csv.writer(open('project_outfile_christian_new.csv','wb'))
+for row in data_parser():
+    outfile.writerow(row)
+print'creation is done of the .CSV'
     print row
 
