@@ -81,9 +81,10 @@ class nCounter(object):
      
 def nCounterGo():
     readerOut()
+    gen = nCounter()
     outfile = csv.writer(open('random_gen_writer.csv','wb'))
     for i in range(0,1):
-        for line in nCounter().yielderOut():
+        for line in gen.yielderOut():
             print line
             outfile.writerow(line)
     print'Have a nice day!'
