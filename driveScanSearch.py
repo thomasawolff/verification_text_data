@@ -4,14 +4,10 @@ def missingFileSearch():
     n = 0
     collSet = []
     driveList = []
-    southVan = 'Z:\\\\'
-    northVan = 'Q:\\\\'
-    external = 'H:\\\\'
-    testData = 'E:\Test Search'
-    driveList.append(southVan)
-    driveList.append(northVan)
-    driveList.append(testData)
-    driveList.append(external)
+    driveList.append('Z:\\\\')
+    driveList.append('Q:\\\\')
+    driveList.append('E:\Test Search')
+    driveList.append('H:\\\\')
     for drives in driveList:
         os.chdir(drives)
         print 'Drive being scanned: ',drives
