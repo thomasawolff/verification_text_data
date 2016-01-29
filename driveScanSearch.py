@@ -5,10 +5,10 @@ def missingFileSearch():
     collSet = []
     driveList = []
     setList = []
-    driveList.append('Z:\\\\')
-    driveList.append('Q:\\\\')
-    driveList.append('H:\\\\')
-    driveList.append('E:\Test Search')
+    driveList.append('drive 1 to be scanned')
+    driveList.append('drive 2 to be scanned')
+    driveList.append('drive 3 to be scanned')
+    driveList.append('drive n to be scanned') ## This code will scan any number of drives
     for drives in driveList:
         ##print drives
         os.chdir(drives)
@@ -30,10 +30,10 @@ def missingFileSearch():
 def binarySearch():
     n = 0
     driveList = []
-    driveList.append('Z:\\\\')
-    driveList.append('Q:\\\\')
-    driveList.append('H:\\\\')
-    driveList.append('E:\Test Search')
+    driveList.append('drive 1 to be scanned')
+    driveList.append('drive 2 to be scanned')
+    driveList.append('drive 3 to be scanned')
+    driveList.append('drive n to be scanned') ## This code will scan any number of drives
     for drives in driveList:
         setFolder = []
         os.chdir(drives) 
