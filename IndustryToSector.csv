@@ -1,0 +1,142 @@
+CatCodeIndustryID,CatCodeIndustry,Definition,CatCodeGroupID,IndustryTimestamp
+1,Miscellaneous Agriculture,,1,8/25/2011 16:22
+2,Crop Production & Basic Processing,,1,8/25/2011 16:22
+3,Tobacco,,1,8/25/2011 16:22
+4,Dairy,,1,8/25/2011 16:22
+5,Poultry & Eggs,,1,8/25/2011 16:22
+6,Livestock,,1,8/25/2011 16:22
+7,Agricultural Services & Products,,1,8/25/2011 16:22
+8,Commodity Brokers & Dealers,,1,8/25/2011 16:22
+9,Forestry & Forest Products,,1,8/25/2011 16:22
+10,Farm Bureau,,1,8/25/2011 16:22
+11,General Contractors,,2,8/25/2011 16:22
+12,Home Builders,,2,8/25/2011 16:22
+13,Special Trade Contractors,,2,8/25/2011 16:22
+14,Construction Services,,2,8/25/2011 16:22
+15,Building Materials & Equipment,,2,8/25/2011 16:22
+16,Miscellaneous Communications & Electronics,,3,8/25/2011 16:22
+17,Printing & Publishing,,3,8/25/2011 16:22
+18,TV & Movie Production/Distribution,,3,8/25/2011 16:22
+19,Cable TV,,3,8/25/2011 16:22
+20,Recorded Music Production,,3,8/25/2011 16:22
+21,Movie Theaters,,3,8/25/2011 16:22
+22,"Bands, Orchestras & Other Live Music Production",,3,1/22/2013 14:19
+23,Live Theater/Other Entertainment Productions,,3,8/25/2011 16:22
+24,Telecom Services & Equipment,,3,8/25/2011 16:22
+25,Telephone Utilities,,3,8/25/2011 16:22
+26,Electronics Manufacturing & Services,,3,8/25/2011 16:22
+27,Computer Equipment & Services,,3,8/25/2011 16:22
+28,Miscellaneous Defense,,4,8/25/2011 16:22
+29,Defense Aerospace,,4,8/25/2011 16:22
+30,Defense Electronics,,4,8/25/2011 16:22
+31,Miscellaneous Energy & Natural Resources,,5,8/25/2011 16:22
+32,Miscellaneous Energy,,5,8/25/2011 16:22
+33,Oil & Gas,,5,8/25/2011 16:22
+34,Mining,,5,8/25/2011 16:22
+35,Nuclear Energy,,5,8/25/2011 16:22
+36,Electric Utilities,,5,8/25/2011 16:22
+37,Environmental Services & Equipment,,5,8/25/2011 16:22
+38,Waste Management,,5,8/25/2011 16:22
+39,Fisheries & Wildlife,,5,8/25/2011 16:22
+40,Commercial Fishing,,5,8/25/2011 16:22
+41,Hunting,,5,8/25/2011 16:22
+42,Water Utilities,,5,8/25/2011 16:22
+43,"Miscellaneous Finance, Insurance & Real Estate",,6,1/22/2013 14:19
+44,Banks & Lending Institutions,,6,8/25/2011 16:22
+45,Commercial Banks,,6,8/25/2011 16:22
+46,Savings & Loans,,6,8/25/2011 16:22
+47,Credit Unions,,6,8/25/2011 16:22
+48,Finance & Credit Companies,,6,8/25/2011 16:22
+49,Securities & Investment,,6,8/25/2011 16:22
+50,Insurance,,6,8/25/2011 16:22
+51,Real Estate,,6,8/25/2011 16:22
+52,Miscellaneous Finance,,6,8/25/2011 16:22
+53,Accountants,,6,8/25/2011 16:22
+54,Business Associations,,7,8/25/2011 16:22
+55,Food Processing & Sales,,1,8/25/2011 16:22
+56,Food & Beverage,,7,8/25/2011 16:22
+57,"Beer, Wine & Liquor",,7,8/25/2011 16:22
+58,Miscellaneous Business,,7,8/25/2011 16:22
+59,Retail Sales,,7,8/25/2011 16:22
+60,Miscellaneous Services,,7,8/25/2011 16:22
+61,Business Services,,7,8/25/2011 16:22
+62,Recreation & Live Entertainment,,7,8/25/2011 16:22
+63,Gambling & Casinos,,7,8/25/2011 16:22
+64,Miscellaneous Health,,8,8/25/2011 16:22
+65,Health Professionals,,8,8/25/2011 16:22
+66,Hospitals & Nursing Homes,,8,8/25/2011 16:22
+67,Health Services,,8,8/25/2011 16:22
+68,Pharmaceuticals & Health Products,,8,8/25/2011 16:22
+69,Education,,9,8/25/2011 16:22
+70,Welfare/Social Work,,9,8/25/2011 16:22
+71,Christian Conservative,,10,8/25/2011 16:22
+72,Consumer Groups,,10,8/25/2011 16:22
+73,Conservative Policy Organization,,10,8/25/2011 16:22
+74,Liberal Policy Organization,,10,8/25/2011 16:22
+75,Tax Issues,,10,8/25/2011 16:22
+76,Foreign & Defense Policy,,10,8/25/2011 16:22
+79,Gun Control,,10,8/25/2011 16:22
+80,Militia & Anti-Government,,10,8/25/2011 16:22
+81,Human Rights,,10,8/25/2011 16:22
+83,Abortion Policy,,10,8/25/2011 16:22
+84,Elderly/Social Security,,10,8/25/2011 16:22
+85,Right to Die,,10,8/25/2011 16:22
+86,Gay/Lesbian Rights & Issues,,10,8/25/2011 16:22
+87,Women's Issues,,10,8/25/2011 16:22
+88,Minority & Disability Groups,,10,8/25/2011 16:22
+89,Animal Rights,,10,8/25/2011 16:22
+90,Anti-Labor Groups,,10,8/25/2011 16:22
+91,Other/Single Issue Groups,,10,8/25/2011 16:22
+92,Term Limits,,10,8/25/2011 16:22
+95,Pro-Environmental Policy,,10,8/25/2011 16:22
+96,Health & Welfare Policy,,10,8/25/2011 16:22
+97,Wise Use,,5,8/25/2011 16:22
+98,Lawyers & Lobbyists,,11,8/25/2011 16:22
+99,General Trade Unions,,12,8/25/2011 16:22
+100,Public Sector Unions,,12,8/25/2011 16:22
+101,Transportation Unions,,12,8/25/2011 16:22
+102,Miscellaneous Manufacturing & Distributing,,7,8/25/2011 16:22
+103,Chemical & Related Manufacturing,,7,8/25/2011 16:22
+104,Steel,,5,8/25/2011 16:22
+105,Smelting & Refining,,5,8/25/2011 16:22
+106,Aluminum Mining & Processing,,5,8/25/2011 16:22
+107,Miscellaneous Transport,,13,8/25/2011 16:22
+108,Air Transport,,13,8/25/2011 16:22
+109,Automotive,,13,8/25/2011 16:22
+110,Trucking,,13,8/25/2011 16:22
+111,Railroads,,5,8/25/2011 16:22
+112,Sea Transport,,13,8/25/2011 16:22
+113,Lodging & Tourism,,7,8/25/2011 16:22
+114,Other,,9,8/25/2011 16:22
+115,Retired,,9,8/25/2011 16:22
+116,Civil Servants/Public Officials,,9,8/25/2011 16:22
+117,Tribal Governments,,9,8/25/2011 16:22
+118,Clergy,,9,8/25/2011 16:22
+119,Nonprofit Institutions,,9,8/25/2011 16:22
+120,Military,,9,8/25/2011 16:22
+121,Uncoded,,14,8/25/2011 16:22
+122,Homemakers/Non-income earners,,14,8/25/2011 16:22
+123,No Employer Listed or Found,,14,8/25/2011 16:22
+124,Generic Occupation/Category Unknown,,14,8/25/2011 16:22
+125,Employer Listed/Category Unknown,,14,8/25/2011 16:22
+126,Candidate Committees,,17,8/25/2011 16:22
+127,Unitemized Contributions,,16,5/1/2013 11:35
+128,Democrat Unitemized Contributions,,16,8/25/2011 16:22
+129,Third-party Unitemized Contributions,,16,8/25/2011 16:22
+130,Nonpartisan Unitemized Contributions,,16,8/25/2011 16:22
+131,Joint Candidate Committee,,17,8/25/2011 16:22
+132,Party Committees,,15,8/25/2011 16:22
+133,Candidate Contributions,,17,1/8/2014 10:54
+134,Party Committee Transfer,,18,8/25/2011 16:22
+135,Non-Contribution,,18,8/25/2011 16:22
+136,Interest Income,,18,8/25/2011 16:22
+137,Balance Forward,,18,8/25/2011 16:22
+138,Crop Production & Basic Processing & Livestock,,1,1/22/2013 14:19
+143,Tobacco companies & tobacco product sales,,7,8/25/2011 16:22
+144,Public Subsidy,,19,8/25/2011 16:22
+145,Leadership PACs,,17,8/25/2011 16:22
+147,Investment Holding Companies,,6,8/25/2011 16:22
+148,Payday/Title Loans,,6,8/25/2011 16:22
+149,Public Education Policy,,10,8/25/2011 16:22
+150,Drug Policy,,10,8/25/2011 16:22
+151,Marijuana growers & product sales,,7,3/29/2017 14:40
